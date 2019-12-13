@@ -1,0 +1,30 @@
+
+State Machine - |Pong_cyclone2|NS
+Name NS.start NS.gameover NS.play 
+NS.start 0 0 0 
+NS.play 1 0 1 
+NS.gameover 1 1 0 
+
+State Machine - |Pong_cyclone2|NS1
+Name NS1.gameover2 NS1.staystill NS1.rightup NS1.rightdown NS1.leftup NS1.leftdown 
+NS1.leftdown 0 0 0 0 0 0 
+NS1.leftup 0 0 0 0 1 1 
+NS1.rightdown 0 0 0 1 0 1 
+NS1.rightup 0 0 1 0 0 1 
+NS1.staystill 0 1 0 0 0 1 
+NS1.gameover2 1 0 0 0 0 1 
+
+State Machine - |Pong_cyclone2|s1
+Name s1.gameover2 s1.leftdown s1.rightup s1.rightdown s1.leftup s1.staystill 
+s1.staystill 0 0 0 0 0 0 
+s1.leftup 0 0 0 0 1 1 
+s1.rightdown 0 0 0 1 0 1 
+s1.rightup 0 0 1 0 0 1 
+s1.leftdown 0 1 0 0 0 1 
+s1.gameover2 1 0 0 0 0 1 
+
+State Machine - |Pong_cyclone2|s
+Name s.start s.gameover s.play 
+s.start 0 0 0 
+s.play 1 0 1 
+s.gameover 1 1 0 
